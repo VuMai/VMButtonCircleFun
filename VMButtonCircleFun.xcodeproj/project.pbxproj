@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		270E24E71B1D95A800D2FE0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E24E61B1D95A800D2FE0D /* main.m */; };
+		270E24EA1B1D95A800D2FE0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E24E91B1D95A800D2FE0D /* AppDelegate.m */; };
+		270E24ED1B1D95A800D2FE0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E24EC1B1D95A800D2FE0D /* ViewController.m */; };
+		270E24F01B1D95A800D2FE0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270E24EE1B1D95A800D2FE0D /* Main.storyboard */; };
+		270E24F21B1D95A800D2FE0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270E24F11B1D95A800D2FE0D /* Images.xcassets */; };
+		270E24F51B1D95A800D2FE0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270E24F31B1D95A800D2FE0D /* LaunchScreen.xib */; };
+		270E25011B1D95A800D2FE0D /* VMButtonCircleFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E25001B1D95A800D2FE0D /* VMButtonCircleFunTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		270E24FB1B1D95A800D2FE0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270E24D91B1D95A800D2FE0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270E24E01B1D95A800D2FE0D;
+			remoteInfo = VMButtonCircleFun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		270E24E11B1D95A800D2FE0D /* VMButtonCircleFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMButtonCircleFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		270E24E51B1D95A800D2FE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270E24E61B1D95A800D2FE0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		270E24E81B1D95A800D2FE0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		270E24E91B1D95A800D2FE0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		270E24EB1B1D95A800D2FE0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		270E24EC1B1D95A800D2FE0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		270E24EF1B1D95A800D2FE0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		270E24F11B1D95A800D2FE0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		270E24F41B1D95A800D2FE0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		270E24FA1B1D95A800D2FE0D /* VMButtonCircleFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMButtonCircleFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		270E24FF1B1D95A800D2FE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270E25001B1D95A800D2FE0D /* VMButtonCircleFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VMButtonCircleFunTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		270E24DE1B1D95A800D2FE0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270E24F71B1D95A800D2FE0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		270E24D81B1D95A800D2FE0D = {
+			isa = PBXGroup;
+			children = (
+				270E24E31B1D95A800D2FE0D /* VMButtonCircleFun */,
+				270E24FD1B1D95A800D2FE0D /* VMButtonCircleFunTests */,
+				270E24E21B1D95A800D2FE0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		270E24E21B1D95A800D2FE0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				270E24E11B1D95A800D2FE0D /* VMButtonCircleFun.app */,
+				270E24FA1B1D95A800D2FE0D /* VMButtonCircleFunTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		270E24E31B1D95A800D2FE0D /* VMButtonCircleFun */ = {
+			isa = PBXGroup;
+			children = (
+				270E24E81B1D95A800D2FE0D /* AppDelegate.h */,
+				270E24E91B1D95A800D2FE0D /* AppDelegate.m */,
+				270E24EB1B1D95A800D2FE0D /* ViewController.h */,
+				270E24EC1B1D95A800D2FE0D /* ViewController.m */,
+				270E24EE1B1D95A800D2FE0D /* Main.storyboard */,
+				270E24F11B1D95A800D2FE0D /* Images.xcassets */,
+				270E24F31B1D95A800D2FE0D /* LaunchScreen.xib */,
+				270E24E41B1D95A800D2FE0D /* Supporting Files */,
+			);
+			path = VMButtonCircleFun;
+			sourceTree = "<group>";
+		};
+		270E24E41B1D95A800D2FE0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				270E24E51B1D95A800D2FE0D /* Info.plist */,
+				270E24E61B1D95A800D2FE0D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		270E24FD1B1D95A800D2FE0D /* VMButtonCircleFunTests */ = {
+			isa = PBXGroup;
+			children = (
+				270E25001B1D95A800D2FE0D /* VMButtonCircleFunTests.m */,
+				270E24FE1B1D95A800D2FE0D /* Supporting Files */,
+			);
+			path = VMButtonCircleFunTests;
+			sourceTree = "<group>";
+		};
+		270E24FE1B1D95A800D2FE0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				270E24FF1B1D95A800D2FE0D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		270E24E01B1D95A800D2FE0D /* VMButtonCircleFun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270E25041B1D95A800D2FE0D /* Build configuration list for PBXNativeTarget "VMButtonCircleFun" */;
+			buildPhases = (
+				270E24DD1B1D95A800D2FE0D /* Sources */,
+				270E24DE1B1D95A800D2FE0D /* Frameworks */,
+				270E24DF1B1D95A800D2FE0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VMButtonCircleFun;
+			productName = VMButtonCircleFun;
+			productReference = 270E24E11B1D95A800D2FE0D /* VMButtonCircleFun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		270E24F91B1D95A800D2FE0D /* VMButtonCircleFunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270E25071B1D95A800D2FE0D /* Build configuration list for PBXNativeTarget "VMButtonCircleFunTests" */;
+			buildPhases = (
+				270E24F61B1D95A800D2FE0D /* Sources */,
+				270E24F71B1D95A800D2FE0D /* Frameworks */,
+				270E24F81B1D95A800D2FE0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				270E24FC1B1D95A800D2FE0D /* PBXTargetDependency */,
+			);
+			name = VMButtonCircleFunTests;
+			productName = VMButtonCircleFunTests;
+			productReference = 270E24FA1B1D95A800D2FE0D /* VMButtonCircleFunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		270E24D91B1D95A800D2FE0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = VuMai;
+				TargetAttributes = {
+					270E24E01B1D95A800D2FE0D = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					270E24F91B1D95A800D2FE0D = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 270E24E01B1D95A800D2FE0D;
+					};
+				};
+			};
+			buildConfigurationList = 270E24DC1B1D95A800D2FE0D /* Build configuration list for PBXProject "VMButtonCircleFun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 270E24D81B1D95A800D2FE0D;
+			productRefGroup = 270E24E21B1D95A800D2FE0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				270E24E01B1D95A800D2FE0D /* VMButtonCircleFun */,
+				270E24F91B1D95A800D2FE0D /* VMButtonCircleFunTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		270E24DF1B1D95A800D2FE0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270E24F01B1D95A800D2FE0D /* Main.storyboard in Resources */,
+				270E24F51B1D95A800D2FE0D /* LaunchScreen.xib in Resources */,
+				270E24F21B1D95A800D2FE0D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270E24F81B1D95A800D2FE0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		270E24DD1B1D95A800D2FE0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270E24ED1B1D95A800D2FE0D /* ViewController.m in Sources */,
+				270E24EA1B1D95A800D2FE0D /* AppDelegate.m in Sources */,
+				270E24E71B1D95A800D2FE0D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270E24F61B1D95A800D2FE0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270E25011B1D95A800D2FE0D /* VMButtonCircleFunTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		270E24FC1B1D95A800D2FE0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270E24E01B1D95A800D2FE0D /* VMButtonCircleFun */;
+			targetProxy = 270E24FB1B1D95A800D2FE0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		270E24EE1B1D95A800D2FE0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				270E24EF1B1D95A800D2FE0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		270E24F31B1D95A800D2FE0D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				270E24F41B1D95A800D2FE0D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		270E25021B1D95A800D2FE0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		270E25031B1D95A800D2FE0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		270E25051B1D95A800D2FE0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VMButtonCircleFun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		270E25061B1D95A800D2FE0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VMButtonCircleFun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		270E25081B1D95A800D2FE0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VMButtonCircleFunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMButtonCircleFun.app/VMButtonCircleFun";
+			};
+			name = Debug;
+		};
+		270E25091B1D95A800D2FE0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VMButtonCircleFunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMButtonCircleFun.app/VMButtonCircleFun";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		270E24DC1B1D95A800D2FE0D /* Build configuration list for PBXProject "VMButtonCircleFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270E25021B1D95A800D2FE0D /* Debug */,
+				270E25031B1D95A800D2FE0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		270E25041B1D95A800D2FE0D /* Build configuration list for PBXNativeTarget "VMButtonCircleFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270E25051B1D95A800D2FE0D /* Debug */,
+				270E25061B1D95A800D2FE0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		270E25071B1D95A800D2FE0D /* Build configuration list for PBXNativeTarget "VMButtonCircleFunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270E25081B1D95A800D2FE0D /* Debug */,
+				270E25091B1D95A800D2FE0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 270E24D91B1D95A800D2FE0D /* Project object */;
+}
