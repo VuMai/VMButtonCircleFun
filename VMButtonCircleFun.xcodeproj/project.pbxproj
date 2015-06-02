@@ -14,6 +14,7 @@
 		270E24F21B1D95A800D2FE0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270E24F11B1D95A800D2FE0D /* Images.xcassets */; };
 		270E24F51B1D95A800D2FE0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270E24F31B1D95A800D2FE0D /* LaunchScreen.xib */; };
 		270E25011B1D95A800D2FE0D /* VMButtonCircleFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E25001B1D95A800D2FE0D /* VMButtonCircleFunTests.m */; };
+		270E250C1B1D96D900D2FE0D /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E250B1B1D96D900D2FE0D /* CircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		270E24FA1B1D95A800D2FE0D /* VMButtonCircleFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMButtonCircleFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		270E24FF1B1D95A800D2FE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		270E25001B1D95A800D2FE0D /* VMButtonCircleFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VMButtonCircleFunTests.m; sourceTree = "<group>"; };
+		270E250A1B1D96D900D2FE0D /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		270E250B1B1D96D900D2FE0D /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		270E24E31B1D95A800D2FE0D /* VMButtonCircleFun */ = {
 			isa = PBXGroup;
 			children = (
+				270E250A1B1D96D900D2FE0D /* CircleView.h */,
+				270E250B1B1D96D900D2FE0D /* CircleView.m */,
 				270E24E81B1D95A800D2FE0D /* AppDelegate.h */,
 				270E24E91B1D95A800D2FE0D /* AppDelegate.m */,
 				270E24EB1B1D95A800D2FE0D /* ViewController.h */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270E250C1B1D96D900D2FE0D /* CircleView.m in Sources */,
 				270E24ED1B1D95A800D2FE0D /* ViewController.m in Sources */,
 				270E24EA1B1D95A800D2FE0D /* AppDelegate.m in Sources */,
 				270E24E71B1D95A800D2FE0D /* main.m in Sources */,
