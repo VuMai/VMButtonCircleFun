@@ -1,27 +1,30 @@
 //
-//  CircleView.m
-//  Popping
+//  VMButtonCircleFun.m
+//  VMButtonCircleFun
 //
-//  Created by André Schneider on 21.05.14.
-//  Copyright (c) 2014 André Schneider. All rights reserved.
+//  Created by Vu Mai on 6/2/15.
+//  Copyright (c) 2015 VuMai. All rights reserved.
 //
 
-#import "CircleView.h"
+#import "VMButtonCircleFun.h"
 
-@interface CircleView()
+@interface VMButtonCircleFun()
+
 @property(nonatomic) CAShapeLayer *circleLayer;
 @property (nonatomic) CAShapeLayer *lineLayerTopToBottom;
 @property (nonatomic) CAShapeLayer *lineLayerBottomToHide;
-- (void)addCircleLayer;
+
+@property (nonatomic, strong) UIImageView *imgIcon;
+
 @end
 
-@implementation CircleView
+@implementation VMButtonCircleFun
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self addCircleLayer];
+        
     }
     return self;
 }
@@ -38,24 +41,53 @@
 - (void)setStrokeColor:(UIColor *)strokeColor
 {
     self.circleLayer.strokeColor = strokeColor.CGColor;
+    self.lineLayerBottomToHide.strokeColor = strokeColor.CGColor;
+    self.lineLayerTopToBottom.strokeColor = strokeColor.CGColor;
     _strokeColor = strokeColor;
 }
 
 #pragma mark - Private Instance methods
 
-- (void)addCircleLayer
+- (void)addCircleLayerWithType:(NSInteger)type
 {
+    CGFloat radius;
+    CGFloat lineWidth = 4.f;
     CGRect screenRect = [[UIScreen mainScreen] bounds];
 //    CGFloat screenWidth = screenRect.size.width;
     CGFloat screenHeight = screenRect.size.height;
-    
-    CGFloat lineWidth = 4.f;
-    CGFloat radius = CGRectGetWidth(self.bounds)/2 - lineWidth/2;
-    self.circleLayer = [CAShapeLayer layer];
-    CGRect rect = CGRectMake(lineWidth/2, lineWidth/2, radius * 2, radius * 2);
-    self.circleLayer.path = [UIBezierPath bezierPathWithRoundedRect:rect
-                                                  cornerRadius:radius].CGPath;
+    CGRect rect;
+    UIBezierPath *path1 = [UIBezierPath bezierPath];
+    UIBezierPath *path2 = [UIBezierPath bezierPath];
+    switch (type) {
+        case VMMakeLocationTop:
+            radius = CGRectGetWidth(self.bounds)/2 - lineWidth/2;
+            rect = CGRectMake(lineWidth/2, lineWidth/2, radius * 2, radius * 2);
+            [path1 moveToPoint:CGPointMake(CGRectGetWidth(self.bounds)/2, -screenHeight)];
+            [path1 addLineToPoint:CGPointMake(CGRectGetWidth(self.bounds)/2, 1)];
 
+            [path2 moveToPoint:CGPointMake(CGRectGetWidth(self.bounds)/2, 1)];
+            [path2 addLineToPoint:CGPointMake(CGRectGetWidth(self.bounds)/2, -screenHeight)];
+            break;
+            
+        case VMMakeLocationBottom:
+            radius = CGRectGetWidth(self.bounds)/2 - lineWidth/2;
+            rect = CGRectMake(CGRectGetWidth(self.bounds)-lineWidth/2,CGRectGetHeight(self.bounds)-lineWidth/2, radius * -2, radius * -2);
+            
+            
+            [path1 moveToPoint:CGPointMake(CGRectGetWidth(self.bounds)/2, +screenHeight)];
+            [path1 addLineToPoint:CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)-1)];
+            
+            [path2 moveToPoint:CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)-1)];
+            [path2 addLineToPoint:CGPointMake(CGRectGetWidth(self.bounds)/2, +screenHeight)];
+            break;
+            
+        default:
+            break;
+    }
+    
+    self.circleLayer = [CAShapeLayer layer];
+    self.circleLayer.path = [UIBezierPath bezierPathWithRoundedRect:rect
+                                                       cornerRadius:radius].CGPath;
     self.circleLayer.strokeColor = self.tintColor.CGColor;
     self.circleLayer.fillColor = nil;
     self.circleLayer.lineWidth = lineWidth;
@@ -65,9 +97,7 @@
     [self.layer addSublayer:self.circleLayer];
     
     self.lineLayerTopToBottom = [CAShapeLayer layer];
-    UIBezierPath *path1 = [UIBezierPath bezierPath];
-    [path1 moveToPoint:CGPointMake(CGRectGetWidth(self.bounds)/2, -screenHeight)];
-    [path1 addLineToPoint:CGPointMake(CGRectGetWidth(self.bounds)/2, 0)];
+    
     self.lineLayerTopToBottom.path = path1.CGPath;
     self.lineLayerTopToBottom.lineWidth = 4.0f;
     [self.lineLayerTopToBottom setStrokeEnd:1.0f];
@@ -75,9 +105,6 @@
     [self.layer addSublayer:self.lineLayerTopToBottom];\
     
     self.lineLayerBottomToHide = [CAShapeLayer layer];
-    UIBezierPath *path2 = [UIBezierPath bezierPath];
-    [path2 moveToPoint:CGPointMake(CGRectGetWidth(self.bounds)/2, 0)];
-    [path2 addLineToPoint:CGPointMake(CGRectGetWidth(self.bounds)/2, -screenHeight)];
     self.lineLayerBottomToHide.path = path2.CGPath;
     self.lineLayerBottomToHide.lineWidth = 4.0f;
     [self.lineLayerBottomToHide setStrokeEnd:1.0f];
@@ -88,7 +115,31 @@
     [UIView setAnimationDelegate:self];
 }
 
--(void)animationStrokeColor
+-(void)setIconButton:(UIImage *)icon withType:(NSInteger)type withColor:(UIColor*)color
+{
+    self.imgIcon = [[UIImageView alloc] initWithImage:icon];
+    [self.imgIcon setFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds)-CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)-CGRectGetHeight(self.bounds)/2)];
+    
+    self.imgIcon.image = [icon imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [self.imgIcon setContentMode:UIViewContentModeScaleAspectFit];
+    [self.imgIcon setTintColor:color];
+    switch (type) {
+        case VMMakeLocationTop:
+            [self.imgIcon setCenter:CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)/2 -20 )];
+            break;
+        case VMMakeLocationBottom:
+            [self.imgIcon setCenter:CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)/2 +20 )];
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self.imgIcon setAlpha:0];
+    [self addSubview:self.imgIcon];
+}
+
+-(void)buildButton
 {
     CABasicAnimation * swipeLine = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     [swipeLine setValue:@"topToBottom" forKey:@"id"];
@@ -101,7 +152,7 @@
     swipeLine.removedOnCompletion=NO;
     self.lineLayerTopToBottom.strokeEnd = 1.0f;
     [self.lineLayerTopToBottom addAnimation:swipeLine forKey:@"topToBottom"];
-
+    
 }
 
 -(void)animationLineBottomToHide
@@ -131,6 +182,13 @@
     swipe.removedOnCompletion=NO;
     self.circleLayer.strokeEnd = 1;
     [self.circleLayer addAnimation:swipe forKey:@"drawCircle"];
+    
+    [UIView animateWithDuration:0.8 delay:0.5 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        [self.imgIcon setAlpha:1];
+        [self.imgIcon setCenter:CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)/2)];
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
@@ -138,7 +196,6 @@
     if([[anim valueForKey:@"id"] isEqual:@"topToBottom"]) {
         [self.lineLayerBottomToHide setOpacity:1];
         [self.lineLayerTopToBottom setOpacity:0];
-//
         [self animationLineBottomToHide];
         [self animationLineCircle];
     }

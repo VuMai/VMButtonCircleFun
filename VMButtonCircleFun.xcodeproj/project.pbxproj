@@ -14,7 +14,10 @@
 		270E24F21B1D95A800D2FE0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270E24F11B1D95A800D2FE0D /* Images.xcassets */; };
 		270E24F51B1D95A800D2FE0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270E24F31B1D95A800D2FE0D /* LaunchScreen.xib */; };
 		270E25011B1D95A800D2FE0D /* VMButtonCircleFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E25001B1D95A800D2FE0D /* VMButtonCircleFunTests.m */; };
-		270E250C1B1D96D900D2FE0D /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E250B1B1D96D900D2FE0D /* CircleView.m */; };
+		270E25101B1DB00400D2FE0D /* VMButtonCircleFun.m in Sources */ = {isa = PBXBuildFile; fileRef = 270E250F1B1DB00400D2FE0D /* VMButtonCircleFun.m */; };
+		270E25151B1DB9E200D2FE0D /* Layer 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 270E25121B1DB9E200D2FE0D /* Layer 14.png */; };
+		270E25161B1DB9E200D2FE0D /* Layer 14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270E25131B1DB9E200D2FE0D /* Layer 14@2x.png */; };
+		270E25171B1DB9E200D2FE0D /* Layer 14@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270E25141B1DB9E200D2FE0D /* Layer 14@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +44,11 @@
 		270E24FA1B1D95A800D2FE0D /* VMButtonCircleFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMButtonCircleFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		270E24FF1B1D95A800D2FE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		270E25001B1D95A800D2FE0D /* VMButtonCircleFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VMButtonCircleFunTests.m; sourceTree = "<group>"; };
-		270E250A1B1D96D900D2FE0D /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
-		270E250B1B1D96D900D2FE0D /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		270E250E1B1DB00400D2FE0D /* VMButtonCircleFun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMButtonCircleFun.h; sourceTree = "<group>"; };
+		270E250F1B1DB00400D2FE0D /* VMButtonCircleFun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMButtonCircleFun.m; sourceTree = "<group>"; };
+		270E25121B1DB9E200D2FE0D /* Layer 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 14.png"; sourceTree = "<group>"; };
+		270E25131B1DB9E200D2FE0D /* Layer 14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 14@2x.png"; sourceTree = "<group>"; };
+		270E25141B1DB9E200D2FE0D /* Layer 14@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 14@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +90,8 @@
 		270E24E31B1D95A800D2FE0D /* VMButtonCircleFun */ = {
 			isa = PBXGroup;
 			children = (
-				270E250A1B1D96D900D2FE0D /* CircleView.h */,
-				270E250B1B1D96D900D2FE0D /* CircleView.m */,
+				270E25111B1DB90B00D2FE0D /* Images */,
+				270E250D1B1DAFDA00D2FE0D /* VMButtonCircleFun */,
 				270E24E81B1D95A800D2FE0D /* AppDelegate.h */,
 				270E24E91B1D95A800D2FE0D /* AppDelegate.m */,
 				270E24EB1B1D95A800D2FE0D /* ViewController.h */,
@@ -122,6 +128,25 @@
 				270E24FF1B1D95A800D2FE0D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		270E250D1B1DAFDA00D2FE0D /* VMButtonCircleFun */ = {
+			isa = PBXGroup;
+			children = (
+				270E250E1B1DB00400D2FE0D /* VMButtonCircleFun.h */,
+				270E250F1B1DB00400D2FE0D /* VMButtonCircleFun.m */,
+			);
+			name = VMButtonCircleFun;
+			sourceTree = "<group>";
+		};
+		270E25111B1DB90B00D2FE0D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				270E25121B1DB9E200D2FE0D /* Layer 14.png */,
+				270E25131B1DB9E200D2FE0D /* Layer 14@2x.png */,
+				270E25141B1DB9E200D2FE0D /* Layer 14@3x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +230,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				270E24F01B1D95A800D2FE0D /* Main.storyboard in Resources */,
+				270E25151B1DB9E200D2FE0D /* Layer 14.png in Resources */,
+				270E25161B1DB9E200D2FE0D /* Layer 14@2x.png in Resources */,
 				270E24F51B1D95A800D2FE0D /* LaunchScreen.xib in Resources */,
 				270E24F21B1D95A800D2FE0D /* Images.xcassets in Resources */,
+				270E25171B1DB9E200D2FE0D /* Layer 14@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				270E250C1B1D96D900D2FE0D /* CircleView.m in Sources */,
+				270E25101B1DB00400D2FE0D /* VMButtonCircleFun.m in Sources */,
 				270E24ED1B1D95A800D2FE0D /* ViewController.m in Sources */,
 				270E24EA1B1D95A800D2FE0D /* AppDelegate.m in Sources */,
 				270E24E71B1D95A800D2FE0D /* main.m in Sources */,
@@ -424,6 +452,7 @@
 				270E25061B1D95A800D2FE0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		270E25071B1D95A800D2FE0D /* Build configuration list for PBXNativeTarget "VMButtonCircleFunTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +461,7 @@
 				270E25091B1D95A800D2FE0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
