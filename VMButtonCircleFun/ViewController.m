@@ -32,8 +32,7 @@
 
 - (void)addCircleView
 {
-    CGRect frame1 = CGRectMake(0, 0, 60, 60);
-    VMButtonCircleFun *circleView1 = [[VMButtonCircleFun alloc] initWithFrame:frame1];
+    VMButtonCircleFun *circleView1 = [[VMButtonCircleFun alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
     [circleView1 addCircleLayerWithType:VMMakeLocationTop];
     circleView1.strokeColor = rgb(243, 106, 106);
     circleView1.center = CGPointMake(CGRectGetWidth(self.view.bounds)/2 - 100, CGRectGetHeight(self.view.bounds)/2);
@@ -42,8 +41,7 @@
     [self.view addSubview:circleView1];
     [circleView1 buildButton];
     
-    CGRect frame2 = CGRectMake(0, 0, 60, 60);
-    VMButtonCircleFun *circleView2 = [[VMButtonCircleFun alloc] initWithFrame:frame2];
+    VMButtonCircleFun *circleView2 = [[VMButtonCircleFun alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
     [circleView2 addCircleLayerWithType:VMMakeLocationBottom];
     circleView2.strokeColor = rgb(255, 195, 45);
     circleView2.center = CGPointMake(CGRectGetWidth(self.view.bounds)/2, CGRectGetHeight(self.view.bounds)/2);
@@ -52,9 +50,7 @@
     [self.view addSubview:circleView2];
     [circleView2 buildButton];
     
-    
-    CGRect frame3 = CGRectMake(0, 0, 60, 60);
-    VMButtonCircleFun *circleView3 = [[VMButtonCircleFun alloc] initWithFrame:frame3];
+    VMButtonCircleFun *circleView3 = [[VMButtonCircleFun alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
     [circleView3 addCircleLayerWithType:VMMakeLocationTop];
     circleView3.strokeColor = rgb(74, 220, 239);
     circleView3.center = CGPointMake(CGRectGetWidth(self.view.bounds)/2 + 100, CGRectGetHeight(self.view.bounds)/2);
