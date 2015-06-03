@@ -33,8 +33,11 @@ Now you can add this funtions to show VMGearsLoading:
 Let’s run through this method step by step:
 
 1: set line color
+
 2: set icon of button with color
+
 3: set line width
+
 4: importan! if you don't use this function button will not appear. 
 
 
