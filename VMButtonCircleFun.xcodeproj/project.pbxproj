@@ -18,6 +18,12 @@
 		270E25151B1DB9E200D2FE0D /* Layer 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 270E25121B1DB9E200D2FE0D /* Layer 14.png */; };
 		270E25161B1DB9E200D2FE0D /* Layer 14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270E25131B1DB9E200D2FE0D /* Layer 14@2x.png */; };
 		270E25171B1DB9E200D2FE0D /* Layer 14@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270E25141B1DB9E200D2FE0D /* Layer 14@3x.png */; };
+		270E251E1B1ED8B000D2FE0D /* Layer 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 270E25181B1ED8B000D2FE0D /* Layer 15.png */; };
+		270E251F1B1ED8B000D2FE0D /* Layer 15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270E25191B1ED8B000D2FE0D /* Layer 15@2x.png */; };
+		270E25201B1ED8B000D2FE0D /* Layer 15@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270E251A1B1ED8B000D2FE0D /* Layer 15@3x.png */; };
+		270E25211B1ED8B000D2FE0D /* Layer 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 270E251B1B1ED8B000D2FE0D /* Layer 16.png */; };
+		270E25221B1ED8B000D2FE0D /* Layer 16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270E251C1B1ED8B000D2FE0D /* Layer 16@2x.png */; };
+		270E25231B1ED8B000D2FE0D /* Layer 16@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 270E251D1B1ED8B000D2FE0D /* Layer 16@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		270E25121B1DB9E200D2FE0D /* Layer 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 14.png"; sourceTree = "<group>"; };
 		270E25131B1DB9E200D2FE0D /* Layer 14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 14@2x.png"; sourceTree = "<group>"; };
 		270E25141B1DB9E200D2FE0D /* Layer 14@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 14@3x.png"; sourceTree = "<group>"; };
+		270E25181B1ED8B000D2FE0D /* Layer 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 15.png"; sourceTree = "<group>"; };
+		270E25191B1ED8B000D2FE0D /* Layer 15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 15@2x.png"; sourceTree = "<group>"; };
+		270E251A1B1ED8B000D2FE0D /* Layer 15@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 15@3x.png"; sourceTree = "<group>"; };
+		270E251B1B1ED8B000D2FE0D /* Layer 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 16.png"; sourceTree = "<group>"; };
+		270E251C1B1ED8B000D2FE0D /* Layer 16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 16@2x.png"; sourceTree = "<group>"; };
+		270E251D1B1ED8B000D2FE0D /* Layer 16@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Layer 16@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +154,12 @@
 		270E25111B1DB90B00D2FE0D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				270E25181B1ED8B000D2FE0D /* Layer 15.png */,
+				270E25191B1ED8B000D2FE0D /* Layer 15@2x.png */,
+				270E251A1B1ED8B000D2FE0D /* Layer 15@3x.png */,
+				270E251B1B1ED8B000D2FE0D /* Layer 16.png */,
+				270E251C1B1ED8B000D2FE0D /* Layer 16@2x.png */,
+				270E251D1B1ED8B000D2FE0D /* Layer 16@3x.png */,
 				270E25121B1DB9E200D2FE0D /* Layer 14.png */,
 				270E25131B1DB9E200D2FE0D /* Layer 14@2x.png */,
 				270E25141B1DB9E200D2FE0D /* Layer 14@3x.png */,
@@ -229,12 +247,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270E251E1B1ED8B000D2FE0D /* Layer 15.png in Resources */,
 				270E24F01B1D95A800D2FE0D /* Main.storyboard in Resources */,
 				270E25151B1DB9E200D2FE0D /* Layer 14.png in Resources */,
+				270E25221B1ED8B000D2FE0D /* Layer 16@2x.png in Resources */,
 				270E25161B1DB9E200D2FE0D /* Layer 14@2x.png in Resources */,
 				270E24F51B1D95A800D2FE0D /* LaunchScreen.xib in Resources */,
 				270E24F21B1D95A800D2FE0D /* Images.xcassets in Resources */,
 				270E25171B1DB9E200D2FE0D /* Layer 14@3x.png in Resources */,
+				270E25211B1ED8B000D2FE0D /* Layer 16.png in Resources */,
+				270E25231B1ED8B000D2FE0D /* Layer 16@3x.png in Resources */,
+				270E251F1B1ED8B000D2FE0D /* Layer 15@2x.png in Resources */,
+				270E25201B1ED8B000D2FE0D /* Layer 15@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

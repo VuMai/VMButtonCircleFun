@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, VMMakeLocation) {
 - (void)setStrokeEnd:(CGFloat)strokeEnd animated:(BOOL)animated;
 -(void)buildButton;
 -(void)setIconButton:(UIImage *)icon withType:(NSInteger)type withColor:(UIColor*)color;
-
+-(void)setLineWidthValue:(float)lineWidthTemp;
+-(void)addAction:(SEL)selector;
 
 @end

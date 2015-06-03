@@ -35,28 +35,31 @@
     CGRect frame1 = CGRectMake(0, 0, 60, 60);
     VMButtonCircleFun *circleView1 = [[VMButtonCircleFun alloc] initWithFrame:frame1];
     [circleView1 addCircleLayerWithType:VMMakeLocationTop];
-    circleView1.strokeColor = rgb(231, 76, 60);
+    circleView1.strokeColor = rgb(243, 106, 106);
     circleView1.center = CGPointMake(CGRectGetWidth(self.view.bounds)/2 - 100, CGRectGetHeight(self.view.bounds)/2);
-    [circleView1 setIconButton:[UIImage imageNamed:@"Layer 14.png"] withType:VMMakeLocationTop withColor:rgb(231, 76, 60)];
+    [circleView1 setIconButton:[UIImage imageNamed:@"Layer 14.png"] withType:VMMakeLocationTop withColor:rgb(127, 140, 141)];
+    [circleView1 setLineWidthValue:1];
     [self.view addSubview:circleView1];
     [circleView1 buildButton];
     
-    CGRect frame2 = CGRectMake(0, 0, 90, 90);
+    CGRect frame2 = CGRectMake(0, 0, 60, 60);
     VMButtonCircleFun *circleView2 = [[VMButtonCircleFun alloc] initWithFrame:frame2];
     [circleView2 addCircleLayerWithType:VMMakeLocationBottom];
-    circleView2.strokeColor = rgb(46, 204, 113);
+    circleView2.strokeColor = rgb(255, 195, 45);
     circleView2.center = CGPointMake(CGRectGetWidth(self.view.bounds)/2, CGRectGetHeight(self.view.bounds)/2);
-    [circleView2 setIconButton:[UIImage imageNamed:@"Layer 14.png"] withType:VMMakeLocationBottom withColor:rgb(46, 204, 113)];
+    [circleView2 setIconButton:[UIImage imageNamed:@"Layer 15.png"] withType:VMMakeLocationBottom withColor:rgb(127, 140, 141)];
+    [circleView2 setLineWidthValue:1];
     [self.view addSubview:circleView2];
     [circleView2 buildButton];
     
     
-    CGRect frame3 = CGRectMake(0, 0, 90, 90);
+    CGRect frame3 = CGRectMake(0, 0, 60, 60);
     VMButtonCircleFun *circleView3 = [[VMButtonCircleFun alloc] initWithFrame:frame3];
     [circleView3 addCircleLayerWithType:VMMakeLocationTop];
-    circleView3.strokeColor = rgb(155, 89, 182);
+    circleView3.strokeColor = rgb(74, 220, 239);
     circleView3.center = CGPointMake(CGRectGetWidth(self.view.bounds)/2 + 100, CGRectGetHeight(self.view.bounds)/2);
-    [circleView3 setIconButton:[UIImage imageNamed:@"Layer 14.png"] withType:VMMakeLocationTop withColor:rgb(155, 89, 182)];
+    [circleView3 setIconButton:[UIImage imageNamed:@"Layer 16.png"] withType:VMMakeLocationTop withColor:rgb(127, 140, 141)];
+    [circleView3 setLineWidthValue:1];
     [self.view addSubview:circleView3];
     [circleView3 buildButton];
 }

@@ -15,7 +15,7 @@
 @property (nonatomic) CAShapeLayer *lineLayerBottomToHide;
 
 @property (nonatomic, strong) UIImageView *imgIcon;
-
+@property (nonatomic) float lineWidth;
 @end
 
 @implementation VMButtonCircleFun
@@ -24,7 +24,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
+        self.lineWidth = 2.0f;
     }
     return self;
 }
@@ -46,12 +46,17 @@
     _strokeColor = strokeColor;
 }
 
+-(void)setLineWidthValue:(float)lineWidthTemp
+{
+    self.lineWidth = lineWidthTemp;
+}
+
 #pragma mark - Private Instance methods
 
 - (void)addCircleLayerWithType:(NSInteger)type
 {
     CGFloat radius;
-    CGFloat lineWidth = 4.f;
+    CGFloat lineWidth = self.lineWidth;
     CGRect screenRect = [[UIScreen mainScreen] bounds];
 //    CGFloat screenWidth = screenRect.size.width;
     CGFloat screenHeight = screenRect.size.height;
@@ -99,14 +104,14 @@
     self.lineLayerTopToBottom = [CAShapeLayer layer];
     
     self.lineLayerTopToBottom.path = path1.CGPath;
-    self.lineLayerTopToBottom.lineWidth = 4.0f;
+    self.lineLayerTopToBottom.lineWidth = self.lineWidth;
     [self.lineLayerTopToBottom setStrokeEnd:1.0f];
     self.lineLayerTopToBottom.strokeColor = [UIColor darkGrayColor].CGColor;
     [self.layer addSublayer:self.lineLayerTopToBottom];\
     
     self.lineLayerBottomToHide = [CAShapeLayer layer];
     self.lineLayerBottomToHide.path = path2.CGPath;
-    self.lineLayerBottomToHide.lineWidth = 4.0f;
+    self.lineLayerBottomToHide.lineWidth = self.lineWidth;
     [self.lineLayerBottomToHide setStrokeEnd:1.0f];
     self.lineLayerBottomToHide.strokeColor = [UIColor darkGrayColor].CGColor;
     [self.lineLayerBottomToHide setOpacity:0];
@@ -125,10 +130,10 @@
     [self.imgIcon setTintColor:color];
     switch (type) {
         case VMMakeLocationTop:
-            [self.imgIcon setCenter:CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)/2 -20 )];
+            [self.imgIcon setCenter:CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)/2 -5 )];
             break;
         case VMMakeLocationBottom:
-            [self.imgIcon setCenter:CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)/2 +20 )];
+            [self.imgIcon setCenter:CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)/2 +5 )];
             break;
             
         default:
@@ -137,6 +142,12 @@
     
     [self.imgIcon setAlpha:0];
     [self addSubview:self.imgIcon];
+}
+
+-(void)addAction:(SEL)selector
+{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:selector];
+    [self addGestureRecognizer:tap];
 }
 
 -(void)buildButton
@@ -183,7 +194,7 @@
     self.circleLayer.strokeEnd = 1;
     [self.circleLayer addAnimation:swipe forKey:@"drawCircle"];
     
-    [UIView animateWithDuration:0.8 delay:0.5 options:UIViewAnimationOptionCurveEaseIn animations:^{
+    [UIView animateWithDuration:0.5 delay:0.5 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [self.imgIcon setAlpha:1];
         [self.imgIcon setCenter:CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)/2)];
     } completion:^(BOOL finished) {
