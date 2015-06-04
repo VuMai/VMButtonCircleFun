@@ -33,7 +33,9 @@ Now you can add this funtions to show VMGearsLoading:
 Let’s run through this method step by step:
 
 *: 2 type of VMButtonCircleFun:
+
         - VMMakeLocationTop: button started from top
+        
         - VMMakeLocationBottom: button started from bottom
 
 1: set line color
