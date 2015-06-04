@@ -22,7 +22,7 @@ Now you can add this funtions to show VMGearsLoading:
 
 ```objc
     VMButtonCircleFun *circleView = [[VMButtonCircleFun alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
-    [circleView addCircleLayerWithType:VMMakeLocationTop];
+    [circleView addCircleLayerWithType:VMMakeLocationTop]; ( * )
     [circleView setStrokeColor:rgb(243, 106, 106)]; ( 1 )
     [circleView setCenter:CGPointMake(CGRectGetWidth(self.view.bounds)/2 - 100, CGRectGetHeight(self.view.bounds)/2)];
     [circleView setIconButton:[UIImage imageNamed:@"Layer 14.png"] withType:VMMakeLocationTop withColor:rgb(127, 140, 141)]; ( 2 )
@@ -31,6 +31,10 @@ Now you can add this funtions to show VMGearsLoading:
     [circleView buildButton]; ( 4 )
 ```
 Let’s run through this method step by step:
+
+*: 2 type of VMButtonCircleFun:
+        - VMMakeLocationTop: button started from top
+        - VMMakeLocationBottom: button started from bottom
 
 1: set line color
 
